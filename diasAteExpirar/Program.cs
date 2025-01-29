@@ -1,54 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace Menu
+namespace Renovacao_assinatura
 {
     internal class Program
     {
-
-        enum Opcao { Criar = 1, Deletar, Editar, Listar, Atualizar }
         static void Main(string[] args)
         {
-            /*
-            Console.WriteLine("Seleciona uma das opções seguintes: ");
-            Console.WriteLine("1-Criar\n2-Deletar\n3-Editar\n4-Listar\n5-Atualizar");
-            int indice = int.Parse(Console.ReadLine());
+            Random random = new Random();
+            int daysUntilExpiration = random.Next(12);
+            int discountPercentage = 0;
 
-            Opcao opcaoSelecionada = (Opcao)indice;
+            daysUntilExpiration = 0;
+            Console.WriteLine(daysUntilExpiration);
 
-            switch(opcaoSelecionada)
+            if (daysUntilExpiration <= 10 && daysUntilExpiration > 5)
             {
-                case Opcao.Criar:
-                    Console.WriteLine("Criar");
-                    break;
-
-                case Opcao.Deletar:
-                    Console.WriteLine("Deletar");
-                    break;
-                case Opcao.Editar:
-                    Console.WriteLine("Editar");
-                    break;
-                case Opcao.Listar:
-                    Console.WriteLine("Listar");
-                    break;
-                case Opcao.Atualizar:
-                    Console.WriteLine("Atualizar");
-                    break;
-                default:
-                    Console.WriteLine("Opção invalida");
-                    break;
-
-                
+                Console.WriteLine("Your subsciption expire soon, renew now!");
             }
-            */
 
-            string[] palavras = { "Juan", "Gabriel", "Oliveira", "Ribeiro" };
-
-            foreach(string palavra in palavras)
+            else if (daysUntilExpiration <= 5 && daysUntilExpiration > 1)
             {
-                Console.WriteLine(palavra);
+                Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days");
+                Console.WriteLine("Renew now and save 10%");
+            }
+
+            else if (daysUntilExpiration == 1)
+            {
+                Console.WriteLine("Your subscription expires within a day!");
+                Console.WriteLine("Renew now and save 20%");
+            }
+
+            else if (daysUntilExpiration == 0)
+            {
+                Console.WriteLine("Your subscription has expired");
             }
         }
     }
