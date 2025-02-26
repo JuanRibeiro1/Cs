@@ -1,0 +1,11 @@
+            int codigoProduto1 = int.Parse(Console.ReadLine());
+            int quantidade1 = int.Parse(Console.ReadLine());
+            double valorProduto1 = double.Parse(Console.ReadLine());
+
+            int codigoProduto2 = int.Parse(Console.ReadLine());
+            int quantidade2 = int.Parse(Console.ReadLine());
+            double valorProduto2 = double.Parse(Console.ReadLine());
+
+            double valorTotal = (quantidade1 * valorProduto1) + (quantidade2 * valorProduto2);
+
+            Console.WriteLine($"Valor total = {valorTotal:C}");
