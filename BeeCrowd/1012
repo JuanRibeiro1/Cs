@@ -1,0 +1,15 @@
+            float baseA = float.Parse(Console.ReadLine());
+            float baseB = float.Parse(Console.ReadLine());
+            float alturaC = float.Parse(Console.ReadLine());
+
+            float triangulo = (baseA * alturaC) / 2;
+            double circulo = 3.14159 * (alturaC * alturaC);
+            float trapezio = ((baseA + baseB) * alturaC) / 2;
+            float quadrado = baseB * baseB;
+            float retangulo = baseA * baseB;
+
+            Console.WriteLine($"TRIANGULO: {triangulo:N3}");
+            Console.WriteLine($"CIRCULO: {circulo:N3}");
+            Console.WriteLine($"TRAPEZIO: {trapezio:N3}");
+            Console.WriteLine($"QUADRADO: {quadrado:N3}");
+            Console.WriteLine($"RETANGULO: {retangulo:N3}");
