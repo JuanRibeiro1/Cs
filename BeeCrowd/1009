@@ -1,0 +1,17 @@
+            int idFuncionario = int.Parse(Console.ReadLine());
+            int horasTrabalhadas = int.Parse(Console.ReadLine());
+            double valorHora = double.Parse(Console.ReadLine());
+
+            double salario = horasTrabalhadas * valorHora;
+
+            Console.WriteLine($"NUMBER = {idFuncionario}");
+            Console.WriteLine($"SALARY = {salario:C}");
+
+
+            string nomeVendedor = Console.ReadLine();
+            double salario = double.Parse(Console.ReadLine());
+            double totalVendas = double.Parse(Console.ReadLine());
+
+            double bonus = ((totalVendas / 100) * 15) + salario;
+
+            Console.WriteLine($"{nomeVendedor} total do salario com bonus {bonus:C}");
