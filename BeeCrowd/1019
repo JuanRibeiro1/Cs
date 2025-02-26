@@ -1,0 +1,9 @@
+            int segundos = int.Parse(Console.ReadLine());
+            int aux;
+
+            int horas = segundos / 3600;
+            aux = segundos % 3600;
+            int minutos = aux / 60;
+            aux = aux % 60;
+
+            Console.WriteLine($"{horas}:{minutos}:{aux}");
