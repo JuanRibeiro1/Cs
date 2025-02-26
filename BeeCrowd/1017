@@ -1,0 +1,6 @@
+            float tempoViagem = int.Parse(Console.ReadLine());
+            float velocidadeMedia = int.Parse(Console.ReadLine());
+
+            float litros = (velocidadeMedia * tempoViagem) / 12;
+
+            Console.WriteLine($"{litros:N3}");
