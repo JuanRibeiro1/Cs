@@ -1,0 +1,14 @@
+            float A = float.Parse(Console.ReadLine());
+            float B = float.Parse(Console.ReadLine());
+
+            float nota = (A + B) / 2;
+
+            Console.WriteLine($"MEDIA = {nota}");
+
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+
+            double media = ((a * 2.0) + (b * 3.0) + (c * 5.0)) / 10.0;
+
+            Console.WriteLine($"MEDIA = {media:N1}");
