@@ -1,0 +1,6 @@
+            int totalKm = int.Parse(Console.ReadLine());
+            float totalGasto = float.Parse(Console.ReadLine());
+
+            float total = totalKm / totalGasto;
+
+            Console.WriteLine($"{total:N3} km/l");
