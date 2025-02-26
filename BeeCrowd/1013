@@ -1,0 +1,9 @@
+            int maiorAB, maiorABC;
+
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+
+            maiorAB = (a + b + Math.Abs(a - b)) / 2;
+            maiorABC = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
+            Console.WriteLine($"{maiorABC} eh o maior");
