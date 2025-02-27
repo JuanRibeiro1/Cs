@@ -1,0 +1,19 @@
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+
+            double r1, r2;
+
+            if (a == 0 || (((b * b) - (4 * a * c)) < 0))
+            {
+                Console.WriteLine("Impossivel calcular");
+            }
+            else
+            {
+
+                r1 = ((-b + Math.Sqrt(((b * b) - (4 * a * c)))) / (2 * a));
+                r2 = ((-b - Math.Sqrt(((b * b) - (4 * a * c)))) / (2 * a));
+
+                Console.WriteLine($"R1 = {r1:N5}");
+                Console.WriteLine($"R2 = {r2:N5}");
+            }
