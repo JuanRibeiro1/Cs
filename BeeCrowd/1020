@@ -1,0 +1,11 @@
+            int dias = int.Parse(Console.ReadLine());
+            int aux;
+
+            int ano = dias / 365;
+            aux = dias % 365;
+            int mes = aux / 30;
+            aux = aux % 30;
+
+            Console.WriteLine($"{ano} ano(s)");
+            Console.WriteLine($"{mes} mes(es)");
+            Console.WriteLine($"{aux} dia(s)");
