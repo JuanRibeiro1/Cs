@@ -1,0 +1,25 @@
+Console.Write("Digite a cordenada X: ");
+double cordX = double.Parse(Console.ReadLine());
+Console.Write("Digite a cordenada Y: ");
+double cordY = double.Parse(Console.ReadLine());
+
+if (cordX == 0 && cordY == 0)
+{
+    Console.WriteLine("Origem");
+}
+else if (cordX > 0 && cordY > 0)
+{
+    Console.WriteLine("Q1");
+}
+else if (cordX > 0 && cordY < 0)
+{
+    Console.WriteLine("Q4");
+}
+else if (cordX < 0 && cordY < 0)
+{
+    Console.WriteLine("Q3");
+}
+else if (cordX < 0 && cordY > 0)
+{
+    Console.WriteLine("Q2");
+}
