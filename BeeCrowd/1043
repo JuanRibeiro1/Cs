@@ -1,0 +1,17 @@
+            Console.Write("Digite um número: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Digite um número: ");
+            double b = double.Parse(Console.ReadLine());
+            Console.Write("Digite um número: ");
+            double c = double.Parse(Console.ReadLine());
+
+            if (a + b > c && a + c > b && b + c > a)
+            {
+                double perimetro = a + b + c;
+                Console.WriteLine($"Perimetro = {perimetro}");
+            }
+            else
+            {
+                double area = (a + b) * c / 2;
+                Console.WriteLine($"Area = {area}");
+            }
