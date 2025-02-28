@@ -1,0 +1,22 @@
+            int horaInicio = int.Parse(Console.ReadLine());
+            int horaFim = int.Parse(Console.ReadLine());
+            int horas = 0;
+
+            if (horaInicio + horaFim >= 24)
+            {
+                Console.WriteLine("Valor invalido");
+            }
+            else
+            {
+                if(horaInicio >= horaFim)
+                {
+                    horas = (24 + horaFim) - horaInicio;
+                    Console.WriteLine($"O JOGO DUROU {horas} HORA(S)");
+                }
+                else
+                {
+                    horas = (horaFim - horaInicio);
+                    Console.WriteLine($"O JOGO DUROU {horas} HORA(S)");
+                }
+
+            }
