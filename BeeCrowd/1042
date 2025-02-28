@@ -1,0 +1,20 @@
+            int[] numbers = new int[3];
+            Console.WriteLine("Digite um número inteiro: ");
+            numbers[0] = int.Parse(Console.ReadLine());
+            numbers[1] = int.Parse(Console.ReadLine());
+            numbers[2] = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
+            Console.WriteLine("");
+
+            Array.Sort(numbers);
+
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+            
