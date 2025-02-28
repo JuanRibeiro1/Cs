@@ -1,0 +1,39 @@
+            Console.Write("Digite o codigo do item desejado: ");
+            int cod = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a quantidade desejada: ");
+            int qtd = int.Parse(Console.ReadLine());
+
+            double valorTotal = 0;
+
+            string produto = "";
+
+            switch (cod)
+            {
+                case 1:
+                    produto = "Cachorro quente";
+                    valorTotal = qtd * 4;
+                    break;
+                case 2:
+                    produto = "X-Salada";
+                    valorTotal = qtd * 4.5;
+                    break;
+                case 3:
+                    produto = "X-Bacon";
+                    valorTotal = qtd * 5;
+                    break;
+                case 4:
+                    produto = "Torrada simples";
+                    valorTotal = qtd * 2;
+                    break;
+                case 5:
+                    produto = "Refrigerante";
+                    valorTotal = qtd * 1.5;
+                    break;
+                default:
+                    produto = "Item não existe";
+                    break;
+            }
+
+            Console.WriteLine($"{produto} {qtd} unidades");
+            Console.WriteLine($"Total: R$ {valorTotal}");
