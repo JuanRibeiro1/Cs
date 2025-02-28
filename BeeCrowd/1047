@@ -1,0 +1,28 @@
+            Console.Write("Digite a hora de inicio: ");
+            int horaInicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite os minutos de inicio: ");
+            int minutoInicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a hora do final da partida: ");
+            int horaFim = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite os minutos que terminaram a partida: ");
+            int minutoFim = int.Parse(Console.ReadLine());
+
+            int horas = 0;
+            int minutos = 0;
+
+
+            if (horaInicio >= horaFim)
+            {
+                horas = (24 + horaFim) - horaInicio;
+                minutos = minutoFim - minutoInicio;
+                Console.WriteLine($"O JOGO DUROU {horas} HORA(S) E {minutos} MINUTOS");
+            }
+            else
+            {
+                horas = (horaFim - horaInicio);
+                minutos = minutoFim - minutoInicio;
+                Console.WriteLine($"O JOGO DUROU {horas} HORA(S) E {minutos} MINUTOS");
+            }
