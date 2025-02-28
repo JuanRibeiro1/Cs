@@ -1,0 +1,40 @@
+            Console.Write("Digite o salario: ");
+            double salario = double.Parse(Console.ReadLine());
+
+            double novoSalario = 0;
+
+            if (salario <= 400)
+            {
+                novoSalario = ((salario / 100) * 15) + salario;
+                Console.WriteLine($"Novo salario: {novoSalario}");
+                Console.WriteLine($"Reajuste ganho: {salario / 100 * 15}");
+                Console.WriteLine("Em percentual: 15%");
+            }
+            else if (salario > 400 && salario <= 800)
+            {
+                novoSalario = ((salario / 100) * 12) + salario;
+                Console.WriteLine($"Novo salario: {novoSalario}");
+                Console.WriteLine($"Reajuste ganho: {salario / 100 * 12}");
+                Console.WriteLine("Em percentual: 12%");
+            }
+            else if (salario > 800 && salario <= 1200)
+            {
+                novoSalario = ((salario / 100) * 10) + salario;
+                Console.WriteLine($"Novo salario: {novoSalario}");
+                Console.WriteLine($"Reajuste ganho: {salario / 100 * 10}");
+                Console.WriteLine("Em percentual: 10%");
+            }
+            else if (salario > 1200 && salario <= 2000)
+            {
+                novoSalario = ((salario / 100) * 7) + salario;
+                Console.WriteLine($"Novo salario: {novoSalario}");
+                Console.WriteLine($"Reajuste ganho: {salario / 100 * 7}");
+                Console.WriteLine("Em percentual: 7%");
+            }
+            else if (salario > 2000)
+            {
+                novoSalario = ((salario / 100) * 4) + salario;
+                Console.WriteLine($"Novo salario: {novoSalario}");
+                Console.WriteLine($"Reajuste ganho: {salario / 100 * 4}");
+                Console.WriteLine("Em percentual: 4%");
+            }
