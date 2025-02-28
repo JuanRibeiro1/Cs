@@ -1,0 +1,28 @@
+            float ladoA = float.Parse(Console.ReadLine());
+            float ladoB = float.Parse(Console.ReadLine());
+            float ladoC = float.Parse(Console.ReadLine());
+
+            if (ladoA >= ladoB + ladoC)
+            {
+                Console.WriteLine("Não forma triangulo");
+            }
+            if (ladoA * ladoA == (ladoB * ladoB) + (ladoC * ladoC))
+            {
+                Console.WriteLine("Triangulo retangulo");
+            }
+            if (ladoA * ladoA > (ladoB * ladoB) + (ladoC * ladoC))
+            {
+                Console.WriteLine("Triangulo obtusangulo");
+            }
+            if (ladoA * ladoA < (ladoB * ladoB) + (ladoC * ladoC))
+            {
+                Console.WriteLine("Triangulo acutangulo");
+            }
+            if (ladoA == ladoB && ladoB == ladoC && ladoA == ladoC)
+            {
+                Console.WriteLine("Triangulo equilatero");
+            }
+            if (ladoA == ladoB && ladoA != ladoC || ladoA == ladoC && ladoB != ladoA || ladoB == ladoC && ladoA != ladoC)
+            {
+                Console.WriteLine("Triangulo isosceles");
+            }
