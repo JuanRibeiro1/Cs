@@ -1,0 +1,36 @@
+Console.Write("Digite o salário: ");
+double salario = double.Parse(Console.ReadLine());
+
+double salario2000;
+double salario3000;
+double salario4500;
+double salarioFinal;
+
+if (salario <= 2000)
+{
+    Console.WriteLine("Isento");
+}
+else if (salario > 2000 && salario <= 3000)
+{
+    salario2000 = salario - 2000;
+
+    salarioFinal = salario2000 / 100 * 8;
+
+    Console.WriteLine($"R$ {salarioFinal}");
+}
+else if (salario > 3000 && salario <= 4500)
+{
+    salario3000 = salario - 3000;
+
+    salarioFinal = salario3000 / 100 * 18;
+
+    Console.WriteLine($"R$ {salarioFinal + 80}");
+}
+else
+{
+    salario4500 = salario - 4500;
+    salarioFinal = salario4500 / 100 * 28;
+
+    Console.WriteLine($"R$ {salarioFinal + 80 + 270:N2}");
+
+}
