@@ -1,0 +1,72 @@
+            Console.Write("Digite uma opção: (vertebrado) ou (invertebrado): ");
+            string palavra1 = Console.ReadLine();
+
+
+            if (palavra1 == "vertebrado")
+            {
+                Console.Write("Digite uma opção: (ave) ou (mamifero): ");
+                string palavra2 = Console.ReadLine();
+
+                if (palavra2 == "ave")
+                {
+                    Console.Write("Digite uma opção: (carnivoro) ou (onivoro): ");
+                    string palavra3 = Console.ReadLine();
+
+                    if (palavra3 == "carnivoro")
+                    {
+                        Console.WriteLine("Aguia");
+                    }
+                    else if (palavra3 == "onivoro")
+                    {
+                        Console.WriteLine("Pomba");
+                    }
+                }
+                else if (palavra2 == "mamifero")
+                {
+                    Console.Write("Digite uma opção: (onivoro) ou (herbivoro)");
+                    string palavra3 = Console.ReadLine();
+
+                    if (palavra3 == "onivoro")
+                    {
+                        Console.WriteLine("Homem");
+                    }
+                    else if (palavra3 == "herbivoro")
+                    {
+                        Console.WriteLine("Vaca");
+                    }
+                }
+            }
+            if (palavra1 == "invertebrado")
+            {
+                Console.Write("Digite uma opção: (inseto) ou (anelideo): ");
+                string palavra2 = Console.ReadLine();
+
+                if (palavra2 == "inseto")
+                {
+                    Console.Write("Digite uma opção: (hematofago) ou (herbivoro): ");
+                    string palavra3 = Console.ReadLine();
+
+                    if (palavra3 == "hematofago")
+                    {
+                        Console.WriteLine("Pulga");
+                    }
+                    else if (palavra3 == "herbivoro")
+                    {
+                        Console.WriteLine("Lagarta");
+                    }
+                }
+                else if (palavra2 == "anelideo")
+                {
+                    Console.Write("Digite uma opção: (hematofago) ou (onivoro): ");
+                    string palavra3 = Console.ReadLine();
+
+                    if (palavra3 == "hematofago")
+                    {
+                        Console.WriteLine("Sanguessuga");
+                    }
+                    else if (palavra3 == "onivoro")
+                    {
+                        Console.WriteLine("Minhoca");
+                    }
+                }
+            }
