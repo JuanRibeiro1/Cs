@@ -1,0 +1,44 @@
+            Console.Write("Digite o dia do inicio do evento: ");
+            int diaInicio = int.Parse(Console.ReadLine());
+            Console.Write("Digite o dia do fim do evento: ");
+            int diaFim = int.Parse(Console.ReadLine());
+            int diaTotal = diaFim - diaInicio;
+
+            Console.Write("Digite a hora de inicio do evento: ");
+            int horaInicio = int.Parse(Console.ReadLine());
+            Console.Write("Digite os minutos do inicio do evento: ");
+            int minutoInicio = int.Parse(Console.ReadLine());
+            Console.Write("Digite os segundos do inicio do evento: ");
+            int segundoInicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a hora de fim do evento: ");
+            int horaFim = int.Parse(Console.ReadLine());
+            int horaTotal = 0;
+
+            Console.Write("Digite os minutos do evento: ");
+            int minutoFim = int.Parse(Console.ReadLine());
+            int minutoTotal = 0;
+
+            Console.Write("Digite os segundos de fim do evento: ");
+            int segundoFim = int.Parse(Console.ReadLine());
+            int segundoTotal = 0;
+
+            if (horaInicio >= horaFim)
+            {
+                if (horaFim < 24)
+                {
+                    diaTotal = diaTotal - 1;
+                }
+                horaTotal = (24 + horaFim) - horaInicio;
+                minutoTotal = minutoFim - minutoInicio;
+                segundoTotal = segundoInicio - segundoFim;
+
+                Console.WriteLine($"{diaTotal} Dia(s)\n{horaTotal} Hora(s)\n{minutoTotal} Minuto(s)\n{segundoTotal} Segundo(s)");
+            }
+            else
+            {
+                horaTotal = (horaFim - horaInicio);
+                minutoTotal = minutoFim - minutoInicio;
+                segundoTotal = segundoInicio - segundoFim;
+                Console.WriteLine($"{diaTotal} Dia(s)\n{horaTotal} Hora(s)\n{minutoTotal} Minuto(s)\n{segundoTotal} Segundo(s)");
+            }
