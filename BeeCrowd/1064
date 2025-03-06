@@ -1,0 +1,27 @@
+            int x = 0;
+            double valores = 0;
+            double media = 0;
+            double valorTotal = 0;
+
+            double[] number = new double[6];
+
+            for (int i = 0; i < number.Length; i++)
+            {
+                number[i] = double.Parse(Console.ReadLine());
+            }
+
+            for (int i = 0; i < number.Length; i++)
+            {
+                if (number[i] > 0)
+                {
+                    x++;
+                    valores = number[i];
+                    valorTotal = valores + valorTotal;
+
+                }
+            }
+
+            media = valorTotal / x;
+
+            Console.WriteLine($"{x} valores positivos");
+            Console.WriteLine($"{media:F2}");
