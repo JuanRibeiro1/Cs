@@ -1,0 +1,12 @@
+            int i = 0;
+            int valor = int.Parse(Console.ReadLine());
+
+            for (i = 1; i <= valor; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    int valor2 = i * i;
+
+                    Console.WriteLine($"{i}^2 = {valor2}");
+                }
+            }
