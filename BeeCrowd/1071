@@ -32,3 +32,5 @@ else if (x > y)
     }
 
 }
+
+Console.WriteLine(soma);
