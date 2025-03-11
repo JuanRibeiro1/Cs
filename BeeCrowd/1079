@@ -1,0 +1,32 @@
+
+            int vezes;
+            double mediaTotal;
+
+            vezes = int.Parse(Console.ReadLine());
+            
+            for (int i = 0; i < vezes; i++)
+            {
+                double media1;
+                double media2;
+                double media3;
+                double numero1;
+                double numero2;
+                double numero3;
+
+                numero1 = double.Parse(Console.ReadLine());
+
+                numero2 = double.Parse(Console.ReadLine());
+
+                numero3 = double.Parse(Console.ReadLine());
+
+
+
+                media1 = 0.2 * numero1;
+                media2 = 0.3 * numero2;
+                media3 = 0.5 * numero3;
+
+                mediaTotal = media1 + media2 + media3;
+
+                Console.WriteLine($"{mediaTotal:N1}");
+
+            }
