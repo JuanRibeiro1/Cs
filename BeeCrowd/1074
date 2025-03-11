@@ -1,0 +1,45 @@
+            int i = 0;
+            int valor = int.Parse(Console.ReadLine());
+            string nome1 = "";
+            string nome2 = "";
+            string nome3 = "";
+            string nome4 = "";
+            string nome5 = "";
+
+            for (i = 0; i < valor; i++)
+            {
+                Console.WriteLine("Digite um numero: ");
+                int numero = int.Parse(Console.ReadLine());
+
+                if (numero > 0 && numero % 2 == 0)
+                {
+                    string even = "EVEN POSITIVE";
+                    nome1 = even;
+                }
+                else if (numero < 0 && numero % 2 == 0)
+                {
+                    string evenN = "EVEN NEGATIVE";
+                    nome2 = evenN;
+                }
+                else if (numero > 0 && numero % 2 != 0)
+                {
+                    string odd = "ODD POSITIVE";
+                    nome3 = odd;
+                }
+                else if (numero < 0 && numero % 2 != 0)
+                {
+                    string oddN = "ODD NEGATIVE";
+                    nome4 = oddN;
+                }
+                else
+                {
+                    string nula = "NULL";
+                    nome5 = nula;
+                }
+            }
+
+            Console.WriteLine(nome1);
+            Console.WriteLine(nome2);
+            Console.WriteLine(nome3);
+            Console.WriteLine(nome4);
+            Console.WriteLine(nome5);
