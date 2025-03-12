@@ -1,0 +1,8 @@
+            for (int numeroI = 1; numeroI <= 9;)
+            {
+                Console.WriteLine($"I={numeroI} J=7");
+                Console.WriteLine($"I={numeroI} J=6");
+                Console.WriteLine($"I={numeroI} J=5");
+
+                numeroI = numeroI + 2;
+            }
