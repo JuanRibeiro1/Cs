@@ -1,0 +1,15 @@
+            float j1 = 1f;
+            float j2 = 2f;
+            float j3 = 3f;
+
+            for (float numeroI = 0; numeroI < 2.2;)
+            {
+                Console.WriteLine($"I={numeroI} J={j1}");
+                Console.WriteLine($"I={numeroI} J={j2}");
+                Console.WriteLine($"I={numeroI} J={j3}");
+
+                j1 = j1 + 0.2f;
+                j2 = j2 + 0.2f;
+                j3 = j3 + 0.2f;
+                numeroI = numeroI + 0.2f;
+            }
