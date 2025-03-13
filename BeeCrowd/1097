@@ -1,0 +1,17 @@
+            int imprimeJ = 7;
+            int imprimeJ2 = 6;
+            int imprimeJ3 = 5;
+
+            for (int numeroI = 1; numeroI <= 9;)
+            {
+
+                Console.WriteLine($"I={numeroI} J={imprimeJ}");
+                Console.WriteLine($"I={numeroI} J={imprimeJ2}");
+                Console.WriteLine($"I={numeroI} J={imprimeJ3}");
+
+                imprimeJ = imprimeJ + 2;
+                imprimeJ2 = imprimeJ2 + 2;
+                imprimeJ3 = imprimeJ3 + 2;
+                numeroI = numeroI + 2;
+
+            }
