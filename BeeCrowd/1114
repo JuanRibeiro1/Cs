@@ -1,0 +1,15 @@
+            string senha = "2002";
+            string senhaDigitada;
+
+            do
+            {
+                senhaDigitada = Console.ReadLine();
+
+                if (senha != senhaDigitada)
+                {
+                    Console.WriteLine("Senha Invalida");
+                }
+            }
+            while (senha != senhaDigitada);
+
+            Console.WriteLine("Acesso Permitido");
