@@ -1,0 +1,28 @@
+            int x = 1;
+            int y = 1;
+
+            do
+            {
+                string[] cordenadas = Console.ReadLine().Split(' ');
+
+                x = int.Parse(cordenadas[0]);
+                y = int.Parse(cordenadas[1]);
+
+                if (x > 0 && y > 0)
+                {
+                    Console.WriteLine("primeiro");
+                }
+                else if (x < 0 && y > 0)
+                {
+                    Console.WriteLine("segundo");
+                }
+                else if (x < 0 && y < 0)
+                {
+                    Console.WriteLine("terceiro");
+                }
+                else if (x > 0 && y < 0)
+                {
+                    Console.WriteLine("quarto");
+                }
+            }
+            while (x != 0 && y != 0);
