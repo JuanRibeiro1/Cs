@@ -1,0 +1,47 @@
+            int gremio, inter, partidas = 1, empates = 0, vitoriaInter = 0, vitoriaGremio = 0;
+            string[] placar;
+            string escolha = "1";
+
+            do
+            {
+                placar = Console.ReadLine().Split(' ');
+
+                inter = int.Parse(placar[0]);
+                gremio = int.Parse(placar[1]);
+
+                Console.WriteLine("Novo grenal (1-sim 2-nao)");
+                escolha = Console.ReadLine();
+
+                if (escolha == "1")
+                {
+                    partidas++;
+                }
+
+                if (inter > gremio)
+                {
+                    vitoriaInter++;
+                }
+                else if (gremio > inter)
+                {
+                    vitoriaGremio++;
+                }
+                else if (inter == gremio)
+                {
+                    empates++;
+                }
+
+            } while (escolha == "1");
+
+            Console.WriteLine($"{partidas} grenais");
+            Console.WriteLine($"Inter:{vitoriaInter}");
+            Console.WriteLine($"Gremio:{vitoriaGremio}");
+            Console.WriteLine($"Empates:{empates}");
+
+            if (vitoriaInter > vitoriaGremio)
+            {
+                Console.WriteLine("Inter venceu mais");
+            }
+            else if (vitoriaGremio > vitoriaInter)
+            {
+                Console.WriteLine("Gremio venceu mais");
+            }
